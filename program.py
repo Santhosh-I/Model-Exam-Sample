@@ -1,10 +1,6 @@
-import os
+num = int(input("Enter a number: "))
 
-path = input("Enter the path: ")
-
-if os.path.isfile(path):
-    print("It is a file")
-elif os.path.isdir(path):
-    print("It is a directory")
+if num % 2 == 0:
+    print("The number is Even")
 else:
-    print("Path does not exist")
+    print("The number is Odd")
